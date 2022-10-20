@@ -1,13 +1,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { StyledEngineProvider } from '@mui/material/styles'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <StyledEngineProvider injectFirst>
-      <Component {...pageProps} />
-    </StyledEngineProvider>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
